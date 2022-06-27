@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Armado de la grilla y configuracion*/
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "section"
+    "section"
+    "footer";
+  grid-template-rows: 120px 1fr 1fr 75px; 
+  grid-row-gap: 10px;
+  height: 100vh;
+  width: 100%;
+}
+/*configuracion del header, footer, section */
+header {
+  grid-area: header;
+  background-size:contain;
+  background-repeat:repeat-x;
+  background-image: url(../images/imagenCataratas.jpg);
+  flex-direction: row;
+  display:flex;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main{
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+footer {
+  grid-area: footer; 
+}
+section {
+  grid-area: section;   
+}
+/*configuracion del encabezado: logo, menu*/
+.LogoTamaño{
+  height: 80px;
+  width: 100px;
+  border-radius: 7px;
+}
+h1{
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px black;
+}
+/*configuracion del menu*/
+ul li{
+  display: inline-flex;
+  font-size: 17px;
+}
+ul li a{
+  font-family:cursive;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px black;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  list-style-type: none;
+}
+li:hover{
+  background-color:black;
+  color:aqua;
+  }
+/*configuracion del cuerpo*/
+.Cuerpo{
+  background-image: url(../images/fondoTres.webp);
+}
+section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 35px;
+}
+/*configuracion del cuerpo del index*/
+h2{
+  text-align: center;
+  text-decoration:underline;
+}
+/*imagenes del index*/
+.Imagen{
+  display:flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+/*footer*/
+.piePagina {
+  font-style: italic;
+  text-align:center;
+  color:black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+fieldset form{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 40px;
+}
+ /* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "section"
+      "section"
+      "footer";
+    grid-template-rows: 1fr 1fr 1fr 75px; 
+    grid-row-gap: 10px;
+    height: 100vh;
+    width: 100%;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Imagen{
+    width: 300px;
+    height: 300px;
+  }
+  fieldset form{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 30px;
+  }
+
+}
