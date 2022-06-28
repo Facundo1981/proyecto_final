@@ -56,6 +56,22 @@ h1{
   color: antiquewhite;
   text-shadow: 1px 1px 2px black;
 }
+h1{
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-direction: alternate;
+}
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 /*configuracion del menu*/
 ul li{
   display: inline-flex;
@@ -73,6 +89,19 @@ ul li a{
 li:hover{
   background-color:black;
   color:aqua;
+}
+h2{
+  border-right: 2.5px solid transparent;
+  animation: cursor 0.3s infinite,
+    escribiendo 3.5s;
+}
+  @keyframes cursor {
+    0% {border-color:transparent}
+    50% {border-color:transparent}
+  }
+  @keyframes escribiendo {
+    from {width: 0;}
+    to {width: 100%;}
   }
 
 /*configuracion del cuerpo*/
@@ -106,7 +135,6 @@ h2{
   -o-transition: all 1s ease-in-out 0s;
   -ms-transition: all 1s ease-in-out 0s;
 }
-
 .Imagen:hover {
   transform:rotate(-10deg) scale(1.2);
   -webkit-transform:rotate(-10deg) scale(1.2);
