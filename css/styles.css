@@ -74,6 +74,7 @@ li:hover{
   background-color:black;
   color:aqua;
   }
+
 /*configuracion del cuerpo*/
 .Cuerpo{
   background-image: url(../images/fondoTres.webp);
@@ -97,6 +98,21 @@ h2{
   padding-left: 20px;
   padding-top: 40px;
   padding-bottom: 20px;
+}
+.Imagen {
+  transition: all 1s ease-in-out 0s;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -o-transition: all 1s ease-in-out 0s;
+  -ms-transition: all 1s ease-in-out 0s;
+}
+
+.Imagen:hover {
+  transform:rotate(-10deg) scale(1.2);
+  -webkit-transform:rotate(-10deg) scale(1.2);
+  -moz-transform:rotate(-10deg) scale(1.2);
+  -o-transform:rotate(-10deg) scale(1.2);
+  -ms-transform:rotate(-10deg) scale(1.2);
 }
 /*footer*/
 .piePagina {
@@ -122,7 +138,7 @@ fieldset form{
       "section"
       "section"
       "footer";
-    grid-template-rows: 1fr 1fr 1fr 75px; 
+    grid-template-rows: 1fr 1fr 1fr 40px; 
     grid-row-gap: 10px;
     height: 100vh;
     width: 100%;
@@ -132,16 +148,66 @@ fieldset form{
     justify-content: center;
     flex-wrap: wrap;
   }
+  main{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
   .Imagen{
     width: 300px;
     height: 300px;
   }
-  fieldset form{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 30px;
+  .formulario{
+    display: flex;
+    flex-direction: column;
   }
-
+  .estiloTextarea{
+    width:350px;height:100px;
+  }
+  fieldset form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "section"
+      "section"
+      "footer";
+    grid-template-rows: 1fr 1fr 1fr 40px; 
+    grid-row-gap: 5px;
+    height: 100vh;
+    width: 100%;
+  }
+  main{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .Imagen{
+    width: 250px;
+    height: 250px;
+  }
+  .formulario{
+    display: flex;
+    flex-direction: column;
+  }
+  .estiloTextarea{
+    width:250px;height:100px;
+  }
+  fieldset form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+  }
 }

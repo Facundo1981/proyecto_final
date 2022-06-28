@@ -31,9 +31,9 @@
         <article>
           <fieldset>
             <form action="ejemplo.php" method="get">
-              <label for="nombre">Nombre:</label> <input type="text" id="nombre"  name="nombre" size="40">
-              <label for="apellido">Apellido: </label> <input type="text" id="apellido" name="apellido" size="40">
-              <label for="email">E-mail: </label> <input type="text" id="email" name="email" size="42">
+              <label for="nombre">Nombre:</label> <input class="formulario" type="text" id="nombre"  name="nombre" size="40">
+              <label for="apellido">Apellido: </label> <input class="formulario" type="text" id="apellido" name="apellido" size="40" >
+              <label for="email">E-mail: </label> <input class="formulario" type="text" id="email" name="email" size="40">
               <div> 
                 <label for="motivo de viaje">Motivo de viaje:
                   <input type="radio" id="vacaciones" name="vacaciones" value="s"> Vacaciones
@@ -50,7 +50,7 @@
                 <option>Presidencial</option>
               </select>
               <div>
-                <textarea name="texto" rows="4" cols="80" placeholder="su consulta"></textarea>
+                <textarea class="estiloTextarea" name="texto" rows="4" cols="80" placeholder="su consulta"></textarea>
               </div>
               <div><input type="checkbox" name="acepta" value="1" />  Acepto recibir notificaciones de <strong>H&C Arami</strong></div>   
               <p>
