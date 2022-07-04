@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
 .menu{
+  padding-left: 2rem;
+  padding-right: 2rem;
   list-style-type: none;
   display: inline-flex;
 }
@@ -8,6 +10,8 @@
   padding-top: 8rem;
 }
 h1{
+  padding-left: 2rem;
+  padding-bottom: 3rem;
   font-family: 'The Nautigal', cursive;
   font-size: 4rem;
 }
@@ -44,6 +48,11 @@ ul li a{
 }
 footer{
   margin-top: 2rem;
+}	
+
+img:hover{
+  border: 5px solid white;
 }
-	
-.img:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+.slide img{
+  height: 65vh;
+}
