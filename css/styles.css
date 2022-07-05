@@ -29,6 +29,16 @@ h2{
     animation-iteration-count:initial;
     animation-direction: alternate;
 }
+h3{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+  color:black;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count:initial;
+    animation-direction: alternate;
+}
 .cuerpo{
   background-image: url(../images/fondoTres.webp);
 }
@@ -56,5 +66,5 @@ img:hover{
   border: 5px solid white;
 }
 .slide img{
-  height: 65vh;
+  height: 80vh;
 }
