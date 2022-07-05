@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
 .menu{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -7,7 +11,7 @@
 }
 .header{
   background-image:url(../images/imagenCataratas.jpg);
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 h1{
   padding-left: 2rem;
@@ -44,12 +48,10 @@ ul li a{
   font-size: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-top: 1rem;
 }
 footer{
   margin-top: 2rem;
 }	
-
 img:hover{
   border: 5px solid white;
 }
