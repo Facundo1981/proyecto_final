@@ -1,241 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-/*Armado de la grilla y configuracion*/
-#grilla {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "section"
-    "section"
-    "footer";
-  grid-template-rows: 120px 1fr 1fr 75px; 
-  grid-row-gap: 10px;
-  height: 100vh;
-  width: 100%;
+.menu{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  list-style-type: none;
+  display: inline-flex;
 }
-/*configuracion del header, footer, section */
-header {
-  grid-area: header;
-  background-size:contain;
-  background-repeat:repeat-x;
-  background-image: url(../images/imagenCataratas.jpg);
-  flex-direction: row;
-  display:flex;
-  font-size: 10px;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  flex-wrap: wrap;
-  text-align: center;
-}
-main{
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-}
-footer {
-  grid-area: footer; 
-}
-section {
-  grid-area: section;   
-}
-/*configuracion del encabezado: logo, menu*/
-.LogoTamaño{
-  height: 80px;
-  width: 100px;
-  border-radius: 7px;
+.header{
+  background-image:url(../images/imagenCataratas.jpg);
+  padding-top: 3rem;
 }
 h1{
-  color: antiquewhite;
-  text-shadow: 1px 1px 2px black;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  font-family: 'The Nautigal', cursive;
+  font-size: 4rem;
 }
-h1{
-  animation-duration: 3s;
-  animation-name: slide;
-  animation-direction: alternate;
+h2{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+  color:brown;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count:initial;
+    animation-direction: alternate;
 }
-@keyframes slide {
+.cuerpo{
+  background-image: url(../images/fondoTres.webp);
+}
+@keyframes slidein {
   from {
     margin-left: 100%;
     width: 300%
   }
-
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
-/*configuracion del menu*/
-ul li{
-  display: inline-flex;
-  font-size: 17px;
-}
 ul li a{
-  font-family:cursive;
-  color: antiquewhite;
-  text-shadow: 1px 1px 2px black;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  list-style-type: none;
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-li:hover{
-  background-color:black;
-  color:aqua;
+footer{
+  margin-top: 2rem;
+}	
+img:hover{
+  border: 5px solid white;
 }
-h2{
-  border-right: 2.5px solid transparent;
-  animation: cursor 0.3s infinite,
-    escribiendo 3.5s;
-}
-  @keyframes cursor {
-    0% {border-color:transparent}
-    50% {border-color:transparent}
-  }
-  @keyframes escribiendo {
-    from {width: 0;}
-    to {width: 100%;}
-  }
-
-/*configuracion del cuerpo*/
-.Cuerpo{
-  background-image: url(../images/fondoTres.webp);
-}
-section{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  line-height: 35px;
-}
-/*configuracion del cuerpo del index*/
-h2{
-  text-align: center;
-  text-decoration:underline;
-}
-/*imagenes del index*/
-.Imagen{
-  display:flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-.Imagen {
-  transition: all 1s ease-in-out 0s;
-  -webkit-transition: all 1s ease-in-out 0s;
-  -moz-transition: all 1s ease-in-out 0s;
-  -o-transition: all 1s ease-in-out 0s;
-  -ms-transition: all 1s ease-in-out 0s;
-}
-.Imagen:hover {
-  transform:rotate(-10deg) scale(1.2);
-  -webkit-transform:rotate(-10deg) scale(1.2);
-  -moz-transform:rotate(-10deg) scale(1.2);
-  -o-transform:rotate(-10deg) scale(1.2);
-  -ms-transform:rotate(-10deg) scale(1.2);
-}
-/*footer*/
-.piePagina {
-  font-style: italic;
-  text-align:center;
-  color:black;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-fieldset form{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  line-height: 40px;
-}
- /* For mobile phones: */
-@media only screen and (max-width: 768px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "section"
-      "section"
-      "footer";
-    grid-template-rows: 1fr 1fr 1fr 40px; 
-    grid-row-gap: 10px;
-    height: 100vh;
-    width: 100%;
-  }
-  header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  main{
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-  .Imagen{
-    width: 300px;
-    height: 300px;
-  }
-  .formulario{
-    display: flex;
-    flex-direction: column;
-  }
-  .estiloTextarea{
-    width:350px;height:100px;
-  }
-  fieldset form{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 20px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "section"
-      "section"
-      "footer";
-    grid-template-rows: 1fr 1fr 1fr 40px; 
-    grid-row-gap: 5px;
-    height: 100vh;
-    width: 100%;
-  }
-  main{
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-  .Imagen{
-    width: 250px;
-    height: 250px;
-  }
-  .formulario{
-    display: flex;
-    flex-direction: column;
-  }
-  .estiloTextarea{
-    width:250px;height:100px;
-  }
-  fieldset form{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 50px;
-  }
+.slide img{
+  height: 65vh;
 }

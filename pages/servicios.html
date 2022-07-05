@@ -4,66 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="../Bootstrap/Css/bootstrap.min.css">
+  <script src="../Bootstrap/Js/jquery.slim.min.js"></script>
+  <script src="../Bootstrap/Js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Hotel & Cabañas Arami</title>
 </head>
-<body class="Cuerpo">
-  <div id="grilla">
-    <header>
-      <div>
-        <img class="LogoTamaño" src="..\images\logo.png" alt="logo">
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <div class="d-flex align-items-center">
         <h1><strong>Hotel & Cabañas Arami</strong></h1>
       </div>
-      <nav>
+      <nav class="navbar navbar-dark bg-dark">
         <ul>
-          <li><a href="..\index.html">Home</a></li>
-          <li><a href=".\habitaciones.html">Habitaciones</a></li>
-          <li><a href=".\gastronomia.html">Gastronomía</a></li>
-          <li><a href=".\servicios.html">Servicios</a></li>
-          <li><a href=".\imagenes.html">Imágenes</a></li>
-          <li><a href=".\contacto.html">Contacto</a></li>
+          <li class="menu"><a href="..\index.html">Home</a></li>
+          <li class="menu"><a href=".\habitaciones.html">Habitaciones</a></li>
+          <li class="menu"><a href=".\gastronomia.html">Gastronomía</a></li>
+          <li class="menu"><a href=".\servicios.html">Servicios</a></li>
+          <li class="menu"><a href=".\imagenes.html">Imágenes</a></li>
+          <li class="menu"><a href=".\contacto.html">Contacto</a></li>
         </ul>
       </nav>   
     </header>
-    <main>
-      <h2>Servicios Disponibles para nuestros huéspedes</h2>
+    <main class="cuerpo">
+      <h2 class="font-italic text-center">Servicios Disponibles para nuestros huéspedes</h2>
       <section>
-        <article>
-          <div>
-            <div>
-              <img class="Imagen" src="..\images\limpieza.png" height="200px"; width="200px";>
-              <p>Servicio de Limpieza</p>
+        <article class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <img class="img-thumbnail" src="../images/estacionamiento.png" alt="Estacionamiento gratuito">
+              <p><strong> Estacionamiento gratuito </strong></p>
+              <img class="img-thumbnail" src="../images/limpieza.png" alt="Estacionamiento gratuito">
+              <p><strong> Servicio de limpieza incluido </strong></p>
             </div>
-            <div>
-              <img class="Imagen" src="..\images\piscina.png" height="200px"; width="200px";>
-              <p>Piscina</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <img class="img-thumbnail" src="../images/botones.png" alt="Estacionamiento gratuito">
+              <p><strong> Atención personalizada  </strong></p>
+              <img class="img-thumbnail" src="../images/wifi.png" alt="Estacionamiento gratuito">
+              <p><strong> Servicio de internet incluido </strong></p>
             </div>
-            <div>
-              <img class="Imagen" src="..\images\cocina.png" height="200px"; width="200px";>
-              <p>Servicio de Cocina abierta 24 hs.</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <img class="img-thumbnail" src="../images/piscina.png" alt="Estacionamiento gratuito">
+              <p><strong> Piscina disponible para clientes  </strong></p>
+              <img class="img-thumbnail"  src="../images/cocina.png" alt="Estacionamiento gratuito">
+              <p><strong> Servicio de Cocina 24 horas </strong></p>
             </div>
-          </div>
-          <div>
-            <div>
-              <img class="Imagen" src="..\images\botones.png" height="200px"; width="200px";>
-              <p>Servicio de Botones</p>
-            </div>
-            <div>
-              <img class="Imagen" src="..\images\estacionamiento.png" height="200px"; width="200px";>
-              <p>Servicio de Estacionamiento cubierto</p>
-            </div>
-            <div>
-              <img class="Imagen" src="..\images\wifi.png" height="200px"; width="200px";>
-              <p>Servicio de Wi-fi</p>
-            </div>
-          </div>
         </article>
       </section>
     </main>
-    <footer>
-      <p class="piePagina">Software Hotelero By FmZ &copy; 2022</p>
-      <p class="piePagina"><strong>E-mail: facundozarate1981@gmail.com</strong></p>
-    </footer>
+    <footer class="bg-dark text-white">
+      <div class="d-flex justify-content-around" style="background-color: rgba(3, 79, 241, 0.2);">
+        <p class="font-italic" >© 2022 Copyright:Software Hotelero By FmZ</p>
+      </div>
+    </footer>  
   </div>
 </body>
 </html>

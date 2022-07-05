@@ -4,56 +4,151 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="../Bootstrap/Css/bootstrap.min.css">
+  <script src="../Bootstrap/Js/jquery.slim.min.js"></script>
+  <script src="../Bootstrap/Js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Hotel & Cabañas Arami</title>
 </head>
-<body class="Cuerpo">
-  <div id="grilla">
-    <header>
-      <div>
-        <img class="LogoTamaño" src="..\images\logo.png" alt="logo">
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <div class="d-flex align-items-center">
         <h1><strong>Hotel & Cabañas Arami</strong></h1>
       </div>
-      <nav>
+      <nav class="navbar navbar-dark bg-dark">
         <ul>
-          <li><a href="..\index.html">Home</a></li>
-          <li><a href=".\habitaciones.html">Habitaciones</a></li>
-          <li><a href=".\gastronomia.html">Gastronomía</a></li>
-          <li><a href=".\servicios.html">Servicios</a></li>
-          <li><a href=".\imagenes.html">Imágenes</a></li>
-          <li><a href=".\contacto.html">Contacto</a></li>
+          <li class="menu"><a href="..\index.html">Home</a></li>
+          <li class="menu"><a href=".\habitaciones.html">Habitaciones</a></li>
+          <li class="menu"><a href=".\gastronomia.html">Gastronomía</a></li>
+          <li class="menu"><a href=".\servicios.html">Servicios</a></li>
+          <li class="menu"><a href=".\imagenes.html">Imágenes</a></li>
+          <li class="menu"><a href=".\contacto.html">Contacto</a></li>
         </ul>
       </nav>   
     </header>
-    <main>
-      <h2>Gastronomía Local</h2>
+    <main class="cuerpo">
+      <h2 class="font-italic text-center">Gastronomía Local</h2>
       <section>
         <article>
-          <div>
-            <div>
-              <img class="Imagen" src="..\images\dorado.jpg" height="250px"; width="350px";>
-              <p>Dorado a la parrila</p>
-            </div>
-            <div>
-              <img class="Imagen" src="..\images\mandiocaFrita.jpg" height="250px"; width="350px";>
-              <p>Mandiocas fritas</p>
-            </div>
-            <div>
-              <img class="Imagen" src="..\images\reviroConHuevo.jpg" height="250px"; width="350px";>
-              <p>Reviro con huevo</p>
-            </div>
-            <div>
-              <img class="Imagen" src="..\images\sopaParaguaya.jpg" height="250px"; width="350px";>
-              <p>Sopa paraguaya</p>
+          <div class="container">
+            <div class="card-columns">
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenUno">
+                  <img src="../images/chipaSoo.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenUno" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="../images/chipaSoo.jpg" alt="" class="img-fluid rounded">    
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenUno">Chipa So´o</h5>
+                    </div>
+                    <div class="modal-body">
+                      La chipa so'o es un plato tradicional de la cocina paraguaya y consisten en una masa de maíz rellena.
+                    </div>
+                  </div>               
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenDos">
+                  <img src="../images/mandiocaFrita.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenDos" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="../images/mandiocaFrita.jpg  " alt="" class="img-fluid rounded"> 
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenDos">Mandioca frita</h5>
+                    </div>
+                    <div class="modal-body">
+                      Su textura es crocante e inigualable sabor criollo. Es ideal para tus tardes de asado de carne o pollo. 
+                    </div>
+                  </div>                          
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenTres">
+                  <img src="../images/reviroConHuevo.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenTres" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="../images/reviroConHuevo.jpg  " alt="" class="img-fluid rounded"> 
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenTres">Reviro con huevo frito</h5>
+                    </div>
+                    <div class="modal-body">
+                      El reviro es una masa frita de harina, agua y sal. Con frecuencia, este alimento reemplaza al pan en muchas comidas.
+                    </div>
+                  </div>                        
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenCuatro">
+                  <img src="../images/dorado.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenCuatro" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="../images/dorado.jpg" alt="" class="img-fluid rounded">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenTres">Dorado a la parrilla</h5>
+                    </div>
+                    <div class="modal-body">
+                      El dorado es un pescado de carne blanca, suave y semigraso. Posee un intenso sabor y es muy apreciado en la gastronomía.
+                    </div>
+                  </div>                                  
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenCinco">
+                  <img src="../images/mbeju.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenCinco" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="../images/mbeju.jpg  " alt="" class="img-fluid rounded">  
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="imagenTres">Mbeju</h5>
+                      </div>
+                      <div class="modal-body">
+                        El mbeyú es una especie de panqueque de almidón de mandioca y queso fresco. Es herencia de la cocina mestiza cario guaraní-española​ y es tradicional de la gastronomía de Paraguay​.​​
+                      </div>
+                    </div>                                  
+                  </div>                 
+                </div>
+              </div>
             </div>
           </div>
         </article>
       </section>
     </main>
-    <footer>
-      <p class="piePagina">Software Hotelero By FmZ &copy; 2022</p>
-      <p class="piePagina"><strong>E-mail: facundozarate1981@gmail.com</strong></p>
-    </footer>
+    <footer class="bg-dark text-white">
+      <div class="d-flex justify-content-around" style="background-color: rgba(3, 79, 241, 0.2);">
+        <p class="font-italic" >© 2022 Copyright:Software Hotelero By FmZ</p>
+      </div>
+    </footer>  
   </div>
 </body>
 </html>

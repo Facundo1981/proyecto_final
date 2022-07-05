@@ -4,56 +4,170 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Bootstrap/Css/bootstrap.min.css">
+  <script src="./Bootstrap/Js/jquery.slim.min.js"></script>
+  <script src="./Bootstrap/Js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href=".\css\styles.css">
   <title>Hotel & Cabañas Arami</title>
 </head>
-<body class="Cuerpo">
-  <div id="grilla">
-    <header>
-      <div>
-        <img class="LogoTamaño" src="./images/logo.png" alt="logo">
+<body>
+  <div class="container-fluid">
+    <header class="header">
+      <div class="d-flex align-items-center">
         <h1><strong>Hotel & Cabañas Arami</strong></h1>
       </div>
-      <nav>
+      <nav class="navbar navbar-dark bg-dark">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/habitaciones.html">Habitaciones</a></li>
-          <li><a href="./pages/gastronomia.html">Gastronomía</a></li>
-          <li><a href="./pages/servicios.html">Servicios</a></li>
-          <li><a href="./pages/imagenes.html">Imágenes</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li class="menu"><a href="./index.html">Home</a></li>
+          <li class="menu"><a href="./pages/habitaciones.html">Habitaciones</a></li>
+          <li class="menu"><a href="./pages/gastronomia.html">Gastronomía</a></li>
+          <li class="menu"><a href="./pages/servicios.html">Servicios</a></li>
+          <li class="menu"><a href="./pages/imagenes.html">Imágenes</a></li>
+          <li class="menu"><a href="./pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>   
     </header>
-    <main>
-      <h2>Hotel & Cabañas Arami</h2>
+    <main class="cuerpo">
+      <h2 class="font-italic text-center">Hotel & Cabañas Arami</h2>
       <section>
         <article>
-          <p>El "Hotel & Cabañas Arami", se encuentra ubicado estratégicamente. Nos encontramos a pocos kilometros de una de las maravillas del mundo: <strong>Las cataras del Iguazú.</strong> Además, como provincia netamente turística contamos con otros lugares bellisimos que tenés que visitar, no te lo podés perder. A continuación te detallamos la distancia desde el <strong>"H&C Arami"</strong> y esos puntos turísticos. En sintesis, podes disfrutar de una estadia totalmente placentera en nuestro Hotel, combinando con tu visita a otros lugares hermosos de misiones: </p>
-          <div>
-            <div>
-              <p>Parque Acuático Urugua-í: se encuentra ubicado en la localidad de Puerto Libertad, sobre la Ruta Nacional N°12.</p>
-              <img class="Imagen" src="./images/ParqueAcuaticoUruguai.jpg"  height="400px"; width="500px"; >
-            </div>
-            <div>
-              <p>Costanera Posadas: se encuentra ubica en la capital de la provincia, a 264 km de la localidad de Puerto Libertad.</p>
-              <img class="Imagen" src="./images/CostaneraPosadas.jpg" height="400px"; width="500px";>
-            </div>
-            <div>
-              <p>Ruinas San Ignacio: se encuentra ubicada a 200 km de la localidad de Puerto Libertad.</p>
-              <img class="Imagen" src="./images/RuinasDeSanIgnacio.jpg" height="400px"; width="500px";>
-            </div>
-            <div>
-              <p>Triple frontera: entre Brasil, Paraguay y Argentina. Este punto turístico se encuentra ubicado a 45 km de la localidad de Puerto Libertad.</p>
-              <img class="Imagen" src="./images/TripleFrontera.jpg" height="400px"; width="500px";>
+          <div class="container">
+            <div class="card-columns">
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenUno">
+                  <img src="./images/cabañaFrente.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenUno" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/cabañaFrente.jpg" alt="" class="img-fluid rounded">  
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenUno">Único</h5>
+                    </div>
+                    <div class="modal-body">
+                      Un lugar acogedor, relajante, y especial para descansar y encontrarse con uno mismo.​​
+                    </div>
+                  </div>                                            
+                </div>
+              </div>  
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenDos">
+                  <img src="./images/cabañaFrenteTres.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenDos" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/cabañaFrenteTres.jpg  " alt="" class="img-fluid rounded"> 
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenDos">Un servicio especializado</h5>
+                    </div>
+                    <div class="modal-body">
+                      Garantizamos tu deleite, pues estamos a tu servicio las 24 horas.
+                    </div>
+                  </div>                        
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenTres">
+                  <img src="./images/exteriorCabañaDos.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenTres" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/exteriorCabañaDos.jpg" alt="" class="img-fluid rounded"> 
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenTres">Disfruta de nuestra gastronomía local</h5>
+                    </div>
+                    <div class="modal-body">
+                      La perfecta combinación entre un entorno maravilloso, y la comida regional más sabrosa.
+                    </div>
+                  </div>                        
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenCuatro">
+                  <img src="./images/cabañaFrenteDos.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenCuatro" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/cabañaFrenteDos.jpg" alt="" class="img-fluid rounded"> 
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenCuatro">Instalaciones diseñadas para tu disfrute</h5>
+                    </div>
+                    <div class="modal-body">
+                      Aprovecha al máximo de nuestras instalaciones. Divertirte, relajate y disfruta a pleno.
+                    </div>
+                  </div>                                             
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenCinco">
+                  <img src="./images/cabañaFrenteCuatro.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenCinco" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/cabañaFrenteCuatro.jpg  " alt="" class="img-fluid rounded">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenCuatro">Cabañas confortables</h5>
+                    </div>
+                    <div class="modal-body">
+                      Disfruta y sientete cómodo en nuestras cabañas. La combinación perfecta entre la modernidad y lo rústico.
+                    </div>
+                  </div>                         
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" data-toggle="modal" data-target="#imagenSeis">
+                  <img src="./images/cabañaFrenteCinco.jpg" alt="" class="card-img-top">
+                </a>
+              </div>          
+              <div class="modal fade" id="imagenSeis" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-lg modal-dialog" role="document">
+                  <img src="./images/cabañaFrenteCinco.jpg  " alt="" class="img-fluid rounded">    
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="imagenCuatro">Cabañas instaladas en un paraíso</h5>
+                    </div>
+                    <div class="modal-body">
+                      El entorno maravilloso de la selva misionera, "abraza" a las cabañas y las pinta de colores misioneros.
+                    </div>
+                  </div>                         
+                </div>
+              </div>
             </div>
           </div>
         </article>
       </section >
-      <footer>
-        <p class="piePagina">Software Hotelero By FmZ &copy; 2022</p>
-        <p class="piePagina"><strong>E-mail: facundozarate1981@gmail.com</strong></p>
-      </footer>
+      <footer class="bg-dark text-white">
+        <div class="d-flex justify-content-around" style="background-color: rgba(3, 79, 241, 0.2);">
+          <p class="font-italic" >© 2022 Copyright:Software Hotelero By FmZ</p>
+        </div>
+      </footer>  
     </main>
   </div>
 </body>
