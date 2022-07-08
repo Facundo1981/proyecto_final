@@ -1,0 +1,18 @@
+/*COLORES*/
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
+.header {
+  background-image: url(../images/imagenCataratas.jpg); }
+  .header h1 {
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    font-family: 'The Nautigal', cursive;
+    font-size: 4rem;
+    color: #120D31; }
+  .header .menu {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    list-style-type: none;
+    display: inline-flex; }
+  .header a {
+    color: #120D31;
+    font-size: 1rem; }

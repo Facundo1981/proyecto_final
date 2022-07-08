@@ -4,8 +4,8 @@
   "license": "MIT",
   "name": "nombre-de-mi-package",
   "scripts": {
-    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
-    "build:css": "node-sass --output-style compressed proyecto_final/scss/estilos.scss proyecto_final/css/main.css"
+    "build-sass": "node-sass --include-path scss sass/index.scss ./css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass"
   },
   "version": "1.0.0",
   "devDependencies": {
