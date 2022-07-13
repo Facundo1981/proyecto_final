@@ -7,12 +7,28 @@
     padding-bottom: 3rem;
     font-family: 'The Nautigal', cursive;
     font-size: 4rem;
-    color: #120D31; }
+    color: #b7ddf7;
+    text-shadow: 3px 4px black; }
+  .header .header_menu {
+    padding-top: .5rem;
+    text-align: center;
+    background-color: #033577;
+    border: .1rem solid black; }
   .header .menu {
     padding-left: 2rem;
     padding-right: 2rem;
     list-style-type: none;
     display: inline-flex; }
   .header a {
-    color: #120D31;
+    color: white;
     font-size: 1rem; }
+
+footer {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: .3rem;
+  text-align: center;
+  background-color: #033577;
+  border: .1rem solid black; }

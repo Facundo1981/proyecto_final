@@ -8,16 +8,24 @@
         padding-bottom: 3rem;
         font-family: 'The Nautigal', cursive;
         font-size: 4rem;
-        color:$primary;
+        color:rgb(183, 221, 247);
+        text-shadow:  3px 4px black;
+      }
+      .header_menu{
+        padding-top: .5rem;
+        text-align: center;
+        background-color: rgb(3, 53, 119);
+        border: .1rem solid black;
       }
         .menu{
             padding-left: 2rem;
             padding-right: 2rem;
             list-style-type: none;
             display: inline-flex;
+            
         }
             a{
-                color:$primary;
+                color:white;
                 font-size: 1rem;
             }
 }
