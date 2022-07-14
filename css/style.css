@@ -6,14 +6,12 @@
     padding-left: 2rem;
     padding-bottom: 3rem;
     font-family: 'The Nautigal', cursive;
-    font-size: 4rem;
     color: #b7ddf7;
-    text-shadow: 3px 4px black; }
+    text-shadow: 3px 4px #120D31; }
   .header .header_menu {
     padding-top: .5rem;
     text-align: center;
-    background-color: #033577;
-    border: .1rem solid black; }
+    border: 0.1rem solid #120D31; }
   .header .menu {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -30,5 +28,34 @@ footer {
   text-align: center;
   padding-top: .3rem;
   text-align: center;
-  background-color: #033577;
-  border: .1rem solid black; }
+  border: 0.1rem solid #120D31; }
+
+footer {
+  background-color: #07357a;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.header_menu {
+  background-color: #07357a;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+.colorh1, h1 {
+  color: black; }
+
+.colorh2, h2 {
+  color: #660505;
+  text-shadow: 1px 1px #1a1717; }
+
+.colorh3, h3 {
+  color: #044242;
+  text-shadow: 1px 1px #181616; }

@@ -4,3 +4,46 @@
 
 @import './estilos_parciales/footer';
 
+@import './generales/mixins';
+
+
+$titulos : (
+    h1 : 4rem,
+    h2 : 2rem,
+    h3 : 1.5rem,
+);
+
+$h1 : map-get($titulos, h1 );
+$h2 : map-get($titulos, h2 );
+$h3 : map-get($titulos, h3 );
+
+h1 {
+    font-size: $h1;
+}
+h2 {
+    font-size: $h2;
+}
+h3 {
+    font-size: $h3;
+}
+
+.colorh1 {
+    color:black;
+}
+.colorh2 {
+    color: rgb(102, 5, 5);
+    text-shadow: 1px 1px rgb(26, 23, 23);
+}
+.colorh3{
+    color: rgb(4, 66, 66);
+    text-shadow: 1px 1px rgb(24, 22, 22);
+}
+h1 {
+    @extend .colorh1;
+}
+h2 {
+    @extend .colorh2;
+}
+h3 {
+    @extend .colorh3;
+}

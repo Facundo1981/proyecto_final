@@ -7,15 +7,13 @@
         padding-left: 2rem;
         padding-bottom: 3rem;
         font-family: 'The Nautigal', cursive;
-        font-size: 4rem;
         color:rgb(183, 221, 247);
-        text-shadow:  3px 4px black;
+        text-shadow:  3px 4px $negro;
       }
       .header_menu{
         padding-top: .5rem;
         text-align: center;
-        background-color: rgb(3, 53, 119);
-        border: .1rem solid black;
+        border: .1rem solid $negro;
       }
         .menu{
             padding-left: 2rem;
@@ -25,7 +23,7 @@
             
         }
             a{
-                color:white;
+                color:$blanco;
                 font-size: 1rem;
             }
 }
