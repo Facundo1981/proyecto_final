@@ -97,3 +97,6 @@ h4 {
   border: 5px solid #4d0146;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+
+.slide img {
+  height: 90vh; }
