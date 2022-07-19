@@ -30,8 +30,6 @@
     box-shadow: inset 200px 0 0 0 #03b3f3; }
 
 footer {
-  display: inline-flex;
-  justify-content: center;
   margin-top: 2rem;
   padding-top: 1rem;
   color: white;
@@ -39,9 +37,6 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   border: 0.1rem solid #120D31; }
   footer div {
-    text-align: center;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
     color: white; }
   footer a {
     color: white; }

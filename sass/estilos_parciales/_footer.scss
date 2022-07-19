@@ -1,6 +1,4 @@
 footer {
-    display:inline-flex;
-    justify-content: center;
     margin-top: 2rem;
     padding-top: 1rem;
     color:$blanco;
@@ -9,9 +7,6 @@ footer {
     border: .1rem solid $negro;
 
     div {
-    text-align: center;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
     color: white;
     }
     a{
