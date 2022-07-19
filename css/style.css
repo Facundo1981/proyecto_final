@@ -37,6 +37,7 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   border: 0.1rem solid #120D31; }
   footer div {
+    padding-left: 2rem;
     color: white; }
   footer a {
     color: white; }
