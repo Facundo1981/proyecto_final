@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*COLORES*/
 @import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap");
 .header {
@@ -29,14 +30,26 @@
     box-shadow: inset 200px 0 0 0 #03b3f3; }
 
 footer {
+  display: inline-flex;
+  justify-content: center;
   margin-top: 2rem;
+  padding-top: 1rem;
   color: white;
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  padding-top: .3rem;
-  text-align: center;
   border: 0.1rem solid #120D31; }
+  footer div {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: white; }
+  footer a {
+    color: white; }
+  footer .nombreCompañia {
+    font-style: italic;
+    color: #02533f;
+    text-shadow: 1px 1px white;
+    font-size: 2rem; }
 
 footer {
   background-color: #07357a;
@@ -57,6 +70,9 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
+h4 {
+  font-size: 1.2rem; }
+
 .colorh1, h1 {
   color: black; }
 
@@ -66,6 +82,10 @@ h3 {
 
 .colorh3, h3 {
   color: #0415ff;
+  text-shadow: 1px 1px #181616; }
+
+.colorh4, h4 {
+  color: #02063a;
   text-shadow: 1px 1px #181616; }
 
 .col {

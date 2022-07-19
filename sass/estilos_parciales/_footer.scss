@@ -1,10 +1,26 @@
 footer {
+    display:inline-flex;
+    justify-content: center;
     margin-top: 2rem;
+    padding-top: 1rem;
     color:$blanco;
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    padding-top: .3rem;
-    text-align: center;
     border: .1rem solid $negro;
+
+    div {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: white;
+    }
+    a{
+        color:white;
+    }
+    .nombreCompañia{
+        font-style: italic;
+        color: rgb(2, 83, 63);
+        text-shadow:1px 1px white;
+        font-size: 2rem;
+    }
 }
