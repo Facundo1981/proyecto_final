@@ -6,13 +6,11 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     border: .1rem solid $negro;
 
-    div {
+    div{
         padding-left: 2rem;
-        color: white;
+        text-align: center;
     }
-    a{
-        color:white;
-    }
+
     .nombreCompañia{
         font-style: italic;
         color: rgb(2, 83, 63);

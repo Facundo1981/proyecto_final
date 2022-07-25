@@ -2,26 +2,23 @@
     @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
     
     background-image:url(../images/imagenCataratas.jpg);
-    margin-bottom: 2rem;
 
     h1{
-        padding-left: 2rem;
-        padding-bottom: 3rem;
-        font-family: 'The Nautigal', cursive;
-        color:rgb(183, 221, 247);
-        text-shadow:  3px 4px $negro;
+      text-align: right;
+      padding-right: 2rem;
+      padding-bottom: 3rem;
+      font-family: 'The Nautigal', cursive;
+      color:rgb(183, 221, 247);
+      text-shadow:  3px 4px $negro;
       }
       .header_menu{
         padding-top: .5rem;
-        text-align: center;
         border: .1rem solid $negro;
       }
         .menu{
-            padding-left: 2rem;
-            padding-right: 2rem;
-            list-style-type: none;
-            display: inline-flex;
-            
+          list-style-type: none;
+          display: inline-flex;  
+          padding-left: 2rem;        
         }
         a {
           box-shadow: inset 0 0 0 0 #0ab0ec;
