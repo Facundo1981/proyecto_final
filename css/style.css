@@ -80,13 +80,6 @@ h4 {
   color: #02063a;
   text-shadow: 1px 1px #181616; }
 
-.col {
-  border: medium double #369;
-  box-shadow: 0px 0px 5px 1px black;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem; }
-
 .card:hover {
   outline: 0px solid transparent;
   padding: 20px 20px;
