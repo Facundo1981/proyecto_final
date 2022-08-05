@@ -29,7 +29,7 @@
 
 footer {
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   color: white;
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
@@ -44,14 +44,10 @@ footer {
     font-size: 2rem; }
 
 footer {
-  background-color: #07357a;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  background-color: #07357a; }
 
 .header_menu {
-  background-color: #07357a;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  background-color: #07357a; }
 
 h1 {
   font-size: 4rem; }
@@ -88,7 +84,7 @@ h4 {
   transition: all 0.2s ease-in-out; }
 
 .slide img {
-  height: 90vh; }
+  height: 97vh; }
 
 .cuerpo {
   padding-top: 2rem;

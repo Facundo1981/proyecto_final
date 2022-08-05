@@ -1,7 +1,5 @@
 @mixin bordeazul {
     background-color: rgb(7, 53, 122);
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 footer{
     @include bordeazul();   
