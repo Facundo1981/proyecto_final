@@ -1,0 +1,34 @@
+.header{   
+    @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+    
+    background-image:url(../images/imagenCataratas.jpg);
+
+    h1{
+      text-align: right;
+      padding-right: 2rem;
+      padding-bottom: 3rem;
+      font-family: 'The Nautigal', cursive;
+      color:rgb(183, 221, 247);
+      text-shadow:  3px 4px $negro;
+      }
+      .header_menu{
+        padding-top: .5rem;
+        border: .1rem solid $negro;
+      }
+        .menu{
+          list-style-type: none;
+          display: inline-flex;  
+          padding-left: 2rem;        
+        }
+        a {
+          box-shadow: inset 0 0 0 0 #0ab0ec;
+          color: white;
+          padding: 0 .25rem;
+          margin: 0 -.25rem;
+          transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        }
+        a:hover {
+          color: black;
+          box-shadow: inset 200px 0 0 0 #03b3f3;
+        }
+}

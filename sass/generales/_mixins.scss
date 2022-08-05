@@ -1,0 +1,9 @@
+@mixin bordeazul {
+    background-color: rgb(7, 53, 122);
+}
+footer{
+    @include bordeazul();   
+}
+.header_menu {
+    @include bordeazul();
+}

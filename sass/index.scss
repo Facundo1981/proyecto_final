@@ -1,0 +1,75 @@
+@import './generales/variables';
+
+@import './estilos_parciales/header';
+
+@import './estilos_parciales/footer';
+
+@import './generales/mixins';
+
+
+$titulos : (
+    h1 : 4rem,
+    h2 : 2rem,
+    h3 : 1.5rem,
+    h4 : 1.2rem,
+);
+
+$h1 : map-get($titulos, h1 );
+$h2 : map-get($titulos, h2 );
+$h3 : map-get($titulos, h3 );
+$h4 : map-get($titulos, h4 );
+
+h1 {
+    font-size: $h1;
+}
+h2 {
+    font-size: $h2;
+}
+h3 {
+    font-size: $h3;
+}
+h4 {
+    font-size: $h4;
+}
+
+.colorh1 {
+    color:black;
+}
+.colorh2 {
+    color: rgb(102, 5, 5);
+    text-shadow: 1px 1px rgb(26, 23, 23);
+}
+.colorh3{
+    color: rgb(4, 21, 255);
+    text-shadow: 1px 1px rgb(24, 22, 22);
+}
+.colorh4{
+    color: rgb(2, 6, 58);
+    text-shadow: 1px 1px rgb(24, 22, 22);
+}
+h1 {
+    @extend .colorh1;
+}
+h2 {
+    @extend .colorh2;
+}
+h3 {
+    @extend .colorh3;
+}
+h4 {
+    @extend .colorh4;
+}
+.card:hover{
+    outline: 0px solid transparent;
+    padding: 20px 20px;
+    border: 5px solid #4d0146;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.slide img{
+    height: 97vh;
+  }
+.cuerpo{
+    padding-top: 2rem;
+    background-image: url(../images/fondoTres.webp);
+  }

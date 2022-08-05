@@ -4,19 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- etiquetas SEO -->
+  <meta name="description" content="Hotel & cabañas Arami en misiones, cataratas del iguazu">
+  <meta name="keywords"  content="HOSPEDAJE, ALOJAMIENTO, VACACIONES, MISIONES, CATARATAS">
+  <!-- bootstrap-->
   <link rel="stylesheet" href="./Bootstrap/Css/bootstrap.min.css">
   <script src="./Bootstrap/Js/jquery.slim.min.js"></script>
   <script src="./Bootstrap/Js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href=".\css\styles.css">
+  <!-- mi css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- título-->
   <title>Hotel & Cabañas Arami</title>
+  <!-- fontawesome-->
+  <script src="https://kit.fontawesome.com/fee81188b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container-fluid">
     <header class="header">
-      <div class="d-flex align-items-center">
+      <div>
         <h1><strong>Hotel & Cabañas Arami</strong></h1>
       </div>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="header_menu">
         <ul>
           <li class="menu"><a href="./index.html">Home</a></li>
           <li class="menu"><a href="./pages/habitaciones.html">Habitaciones</a></li>
@@ -77,7 +85,7 @@
               </div>
               <div class="card">
                 <a href="#" data-toggle="modal" data-target="#imagenTres">
-                  <img src="./images/exteriorCabañaDos.jpg" alt="" class="card-img-top">
+                  <img src="./images/desayunoCabaña.jpg" alt="" class="card-img-top">
                 </a>
               </div>          
               <div class="modal fade" id="imagenTres" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -85,7 +93,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-dialog modal-lg modal-dialog" role="document">
-                  <img src="./images/exteriorCabañaDos.jpg" alt="" class="img-fluid rounded"> 
+                  <img src="./images/desayunoCabaña.jpg" alt="" class="img-fluid rounded"> 
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="imagenTres">Disfruta de nuestra gastronomía local</h5>
@@ -127,7 +135,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-dialog modal-lg modal-dialog" role="document">
-                  <img src="./images/cabañaFrenteCuatro.jpg  " alt="" class="img-fluid rounded">
+                  <img src="./images/cabañaFrenteCuatro.jpg" alt="" class="img-fluid rounded">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="imagenCuatro">Cabañas confortables</h5>
@@ -164,22 +172,68 @@
         </article>
         <article class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <h3 class="font-italic">Ubicación del Hotel & Cabañas Arami</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.50402144623!2d-54.58754572035929!3d-25.920863959340625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6e3674630d281%3A0x19f07cfb4672cc74!2sCorrientes%20438%2C%20Puerto%20Libertad%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657030527902!5m2!1ses-419!2sar" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7176.850088412136!2d-54.586391!3d-25.921265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6e3674630d281%3A0x19f07cfb4672cc74!2sCorrientes%20438%2C%20Puerto%20Libertad%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1658746446772!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <h3 class="font-italic">Medios de pago</h3>
-              <img src="./images/mediosDePago.jpg" alt="" class="card-img-top">
+              <img src="./images/mediosDePago.jpg" width="300" height="300" class="img-fluid" alt="imagen medios de pagos">
             </div>
+            <table class="table table-hover">
+              <h3>Distancias</h3>
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>Lugar:</th>
+                  <th>Kilometros:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><strong>Aeropuerto Internacional Cataratas del Iguazú, Argentina.</strong></td>
+                  <td><strong>42</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><strong>Aeropuerto Internacional de Foz do Iguaçu, Brasil.</strong></td>
+                  <td><strong>55.3</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><strong>Parque Nacional Iguazú, Argentina.</strong></td>
+                  <td><strong>39.4</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><strong>Puente internacional Tancredo Neves, Brasil.</strong></td>
+                  <td><strong>45</strong></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </article>
       </section >
-      <footer class="bg-dark text-white">
-        <div class="d-flex justify-content-around" style="background-color: rgba(3, 79, 241, 0.2);">
-          <p class="font-italic" >© 2022 Copyright:Software Hotelero By FmZ</p>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+            <p class="nombreCompañia">Hotel&Cabañas Arami</p>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>Corrientes 438, Barrio Tayi</span>, Puerto Libertad (Misiones)</p>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">         
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>+54 9 3757 519505</p>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="#">facundozarate1981@gmail.com</a></p>
+          </div>
         </div>
-      </footer>  
+      </footer>
     </main>
   </div>
 </body>

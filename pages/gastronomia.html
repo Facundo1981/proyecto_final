@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Bootstrap/Css/bootstrap.min.css">
-  <script src="../Bootstrap/Js/jquery.slim.min.js"></script>
-  <script src="../Bootstrap/Js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../css/styles.css">
-  <title>Hotel & Cabañas Arami</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- etiquetas SEO -->
+    <meta name="description" content="Hotel & cabañas Arami en misiones, cataratas del iguazu">
+    <meta name="keywords"  content="HOSPEDAJE, ALOJAMIENTO, VACACIONES, MISIONES, CATARATAS">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="../Bootstrap/Css/bootstrap.min.css">
+    <script src="../Bootstrap/Js/jquery.slim.min.js"></script>
+    <script src="../Bootstrap/Js/bootstrap.bundle.min.js"></script>
+    <!-- mi css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- título-->
+    <title>Hotel & Cabañas Arami</title>
+    <!-- fontawesome-->
+  <script src="https://kit.fontawesome.com/fee81188b0.js" crossorigin="anonymous"></script>
+  </head>
 <body>
   <div class="container-fluid">
     <header class="header">
-      <div class="d-flex align-items-center">
+      <div>
         <h1><strong>Hotel & Cabañas Arami</strong></h1>
       </div>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="header_menu">
         <ul>
           <li class="menu"><a href="..\index.html">Home</a></li>
           <li class="menu"><a href=".\habitaciones.html">Habitaciones</a></li>
@@ -31,7 +39,6 @@
       <h2 class="font-italic text-center">Gastronomía Local</h2>
       <section>
         <article>
-          <div class="container">
             <div class="card-columns">
               <div class="card">
                 <a href="#" data-toggle="modal" data-target="#imagenUno">
@@ -140,15 +147,28 @@
                 </div>
               </div>
             </div>
-          </div>
         </article>
       </section>
     </main>
-    <footer class="bg-dark text-white">
-      <div class="d-flex justify-content-around" style="background-color: rgba(3, 79, 241, 0.2);">
-        <p class="font-italic" >© 2022 Copyright:Software Hotelero By FmZ</p>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+          <p class="nombreCompañia">Hotel&Cabañas Arami</p>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+          <i class="fa-solid fa-location-dot"></i>
+          <p><span>Corrientes 438, Barrio Tayi</span>, Puerto Libertad (Misiones)</p>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">         
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>+54 9 3757 519505</p>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-12 mb-lg-0">
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="#">facundozarate1981@gmail.com</a></p>
+        </div>
       </div>
-    </footer>  
+    </footer>
   </div>
 </body>
 </html>
